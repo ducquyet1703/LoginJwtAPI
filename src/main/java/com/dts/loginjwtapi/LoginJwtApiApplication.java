@@ -26,7 +26,7 @@ public class LoginJwtApiApplication implements CommandLineRunner {
         // Insert vào csdl một user.
         User user = new User();
         user.setUsername("dts");
-        user.setPassword(passwordEncoder.encode("123456"));
+        user.setPassword(passwordEncoder.encode("abc123"));
         userRepository.save(user);
         System.out.println(user);
     }
